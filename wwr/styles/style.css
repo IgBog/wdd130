@@ -1,34 +1,105 @@
-body {
-    background-color: #fcfbfb; 
-}
+/* styles/style.css */
 
-header {
-    background-color: rgba(20,30,13, .7);
-}
-
-nav a:hover {
-    background-color: black;
-}
-
-nav a:hover {
-    background-color: black;
-    color: #d9c2a3;
-}    
-
-.icon {
-    width: 80px;
-}
-
-nav a {
+/* Setting a width */
+#content {
+    max-width: 1600px;
+  }
+  
+  /* Centering the page */
+  #content {
+    margin: 0 auto;
+  }
+  
+  /* More Centering */
+  nav a,
+  #hero-msg h1,
+  #hero-msg h4,
+  .button-box,
+  main section {
     text-align: center;
-    color: #fcfbfb;
+  }
+  
+  /* Adding a container for our message background */
+  #background {
+    height: 725px;
+  }
+  
+  /* Setting background colors */
+  body {
+    background-color: #fcfbfb;
+  }
+  
+  header {
+    background-color: rgba(20, 30, 13, .7);
+  }
+  
+  nav a:hover {
+    background-color: black;
+  }
+  
+  .book,
+  .join {
+    background-color: /* color */;
+  }
+  
+  .book:hover,
+  .join:hover {
+    background-color: /* color */;
+  }
+  
+  #background {
+    background-color: /* color */;
+  }
+  
+  .msg {
+    background-color: /* color */;
+  }
+  
+  footer {
+    background-color: /* color */;
+  }
+  
+  /* Foreground colors */
+  nav a,
+  nav a:hover,
+  .home-title,
+  h4,
+  .book,
+  .join,
+  .book:hover,
+  .join:hover,
+  .msg h2,
+  .msg p,
+  footer,
+  footer a,
+  footer a:hover {
+    color: /* color */;
+  }
+  
+  /* Add a Few Widths */
+  .logo,
+  .icon {
+    width: 80px;
+  }
+  
+  #hero-img {
+    width: 100%;
+  }
+  
+  /* Take off or add the default underline of links */
+  nav a,
+  .book,
+  .join,
+  footer a {
     text-decoration: none;
-}            
-
-footer p {
-    font-size: 1.2em;
-}    
-
-footer p a:hover {
+  }
+  
+  /* Footer underline */
+  footer p a:hover {
     text-decoration: underline;
-}    
+  }
+  
+  /* Font size for footer text */
+  footer p {
+    font-size: 1.2em;
+  }
