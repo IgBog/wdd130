@@ -24,6 +24,7 @@
   --nav-hover-background-color: #396E94; /* Navigation hover background color */
 }
 
+
 /* Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
@@ -116,23 +117,23 @@ nav {
   font-size: 1.2em;
 }
 
-nav ul {
+nav  {
   list-style-type: none;
   display: flex;
 }
 
-nav ul li {
-  padding: 1em;
+nav a {
+  padding:1em;
   min-width: 120px;
-}
-
-nav ul li a:link,
-nav ul li a:visited {
-  color: var(--nav-link-color);
   text-decoration: none;
+  padding: 10px;
 }
 
-nav ul li a:hover {
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
