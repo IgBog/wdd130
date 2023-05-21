@@ -1,15 +1,43 @@
 /* Importing fonts and defining color and font variables */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital@1&display=swap');
 
-/* Resetting browser default styles */
-body, h2 {
-  margin: 0;
-  padding: 0;
+:root {
+  /* Color variables */
+  --primary-color: #1C2331; /* Primary color */
+  --secondary-color: #396E94; /* Secondary color */
+  --accent1-color: #5BC0EB; /* Accent color 1 */
+  --accent2-color: #084F30; /* Accent color 2 */
+
+  /* Font variables */
+  --heading-font: "Rock salt"; /* Font for headings */
+  --paragraph-font: "Roboto", "Helvetica", sans-serif; /* Font for paragraphs */
+
+  /* Text color variables for different backgrounds */
+  --headline-color-on-white: #1C2331; /* Headline color on white background */ 
+  --headline-color-on-color: #1C2331; /* Headline color on colored background */ 
+  --paragraph-color-on-white: #1C2331; /* Paragraph text color on white background */ 
+  --paragraph-color-on-color: #1C2331; /* Paragraph text color on colored background */ 
+  --paragraph-background-color: #5BC0EB; /* Background color for paragraphs */
+  --nav-link-color: #1C2331; /* Navigation link color */
+  --nav-background-color: #396E94; /* Navigation background color */
+  --nav-hover-link-color: #5BC0EB; /* Navigation hover link color */
+  --nav-hover-background-color: #084F30; /* Navigation hover background color */
 }
 
-/* Setting font styles */
+/* Look around below...but DON'T CHANGE ANYTHING! */
+
 body {
-  font-family: "Roboto", "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
 }
 
 .home-title {
@@ -17,14 +45,10 @@ body {
   margin-top: 10px;
 }
 
-.book, .join {
-  background-color: #d9c2a3;
-  color: black;
-  text-decoration: none;
+.book,
+.join {
   font-size: 18px;
   padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
 }
 
 .msg p {
@@ -36,17 +60,12 @@ body {
   padding: 35px;
 }
 
-/* Adding padding and margin to elements */
 #logo_link {
   padding-top: 5px;
 }
 
 nav a {
   padding: 35px;
-}
-
-.book, .join {
-  padding: 15px 30px;
 }
 
 .icon {
@@ -74,13 +93,6 @@ footer .social img {
   margin-top: 10px;
 }
 
-.rivers-card,
-.camping-card,
-.rapids-card {
-  margin: 200px 0;
-}
-
-/* Adding border and border-radius */
 .book,
 .join {
   border-radius: 5px;
@@ -90,7 +102,6 @@ footer .social img {
   border: 10px solid #000;
 }
 
-/* Including border in the image size */
 main section img {
   box-sizing: border-box;
 }
