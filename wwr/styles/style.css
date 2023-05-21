@@ -4,24 +4,24 @@
 :root {
   /* Color variables */
   --primary-color: #1C2331; /* Primary color */
-  --secondary-color: #0B4F30; /* Secondary color */
+  --secondary-color: #396E94; /* Secondary color */
   --accent1-color: #5BC0EB; /* Accent color 1 */
-  --accent2-color: #5BC0EB; /* Accent color 2 */
+  --accent2-color: #084F30; /* Accent color 2 */
 
   /* Font variables */
   --heading-font: "Rock salt"; /* Font for headings */
   --paragraph-font: "Roboto", "Helvetica", sans-serif; /* Font for paragraphs */
 
   /* Text color variables for different backgrounds */
-  --headline-color-on-white: #5BC0EB; /* Headline color on white background */ 
-  --headline-color-on-color: #5BCDEB; /* Headline color on colored background */ 
-  --paragraph-color-on-white: #396E94; /* Paragraph text color on white background */ 
-  --paragraph-color-on-color: #5BC0EB; /* Paragraph text color on colored background */ 
-  --paragraph-background-color: #084F30; /* Background color for paragraphs */
-  --nav-link-color: #396E94; /* Navigation link color */
-  --nav-background-color: #084F30; /* Navigation background color */
+  --headline-color-on-white: #1C2331; /* Headline color on white background */ 
+  --headline-color-on-color: #1C2331; /* Headline color on colored background */ 
+  --paragraph-color-on-white: #1C2331; /* Paragraph text color on white background */ 
+  --paragraph-color-on-color: #1C2331; /* Paragraph text color on colored background */ 
+  --paragraph-background-color: #5BC0EB; /* Background color for paragraphs */
+  --nav-link-color: #1C2331; /* Navigation link color */
+  --nav-background-color: #396E94; /* Navigation background color */
   --nav-hover-link-color: #5BC0EB; /* Navigation hover link color */
-  --nav-hover-background-color: #396E94; /* Navigation hover background color */
+  --nav-hover-background-color: #084F30; /* Navigation hover background color */
 }
 
 /* Look around below...but DON'T CHANGE ANYTHING! */
@@ -43,6 +43,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
+  text-align: center;
 }
 
 h2 {
@@ -116,74 +117,13 @@ nav {
   font-size: 1.2em;
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-nav ul li {
-  padding: 1em;
-  min-width: 120px;
-}
-
-nav ul li a:link,
-nav ul li a:visited {
+nav a {
   color: var(--nav-link-color);
   text-decoration: none;
+  margin: 0 10px;
 }
 
-nav ul li a:hover {
+nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
-}
-
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-
-.sitemap > div {
-  text-align: center;
-}
-
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
-
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
 }
